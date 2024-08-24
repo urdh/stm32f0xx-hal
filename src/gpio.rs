@@ -239,7 +239,7 @@ macro_rules! gpio {
                     pac::$GPIOX
                 };
 
-                use cortex_m::interrupt::CriticalSection;
+                use bare_metal::CriticalSection;
 
                 use super::{
                     Alternate, Analog, Floating, GpioExt, Input, OpenDrain, Output,
